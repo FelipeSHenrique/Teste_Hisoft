@@ -11,7 +11,7 @@
                         
                         <li>
                             {{-- passando apenas o id do personagem para rota pessoa/ --}}
-                            <a href="/pessoa/{{str_ireplace("https://swapi.co/api/people/", "", $persons->url)}}">{{$persons->name}}</a>
+                            <a href="/{{str_ireplace("https://swapi.co/api/people/", "", $persons->url)}}">{{$persons->name}}</a>
                         </li>
                         
                     @endforeach

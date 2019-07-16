@@ -5,4 +5,4 @@
 
 
     Route::get('/pessoa/{id}', [GetController::class, 'getPersonagem']);
-    Route::get('/pessoas', [GetController::class, 'getPage']);
+    Route::get('/', [GetController::class, 'getPage']);
