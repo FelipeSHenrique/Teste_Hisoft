@@ -18,7 +18,7 @@
                 <li><strong>Birth Year: </strong>{{$pessoa->birth_year}}</li>
                 <li><strong>Gender: </strong>{{$pessoa->gender}}</li>
                 {{-- Mostra os Filmes --}}
-                <li><a data-toggle="collapse" href="#films" role="button" aria-expanded="false" aria-controls="collapseExample">Films</a></li>
+                <li><a class="dropdown-toggle" data-toggle="collapse" href="#films" role="button" aria-expanded="false" aria-controls="collapseExample">Films</a></li>
                 <div class="collapse" id="films">
                     <div class="card-body">
                             @foreach ($pessoa->films as $film)
@@ -30,7 +30,7 @@
                     </div>
                 </div>  
                 {{-- Mostra as especies --}}
-                <li><a data-toggle="collapse" href="#species" role="button" aria-expanded="false" aria-controls="collapseExample">Species</a></li>
+                <li><a class="dropdown-toggle" data-toggle="collapse" href="#species" role="button" aria-expanded="false" aria-controls="collapseExample">Species</a></li>
                 <div class="collapse" id="species">
                     <div class="card-body">
                             @foreach ($pessoa->species as $specie)
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 {{-- Mostra os Veiculos --}}
-                <li><a data-toggle="collapse" href="#vehicles" role="button" aria-expanded="false" aria-controls="collapseExample">Vehicles</a></li>
+                <li><a class="dropdown-toggle" data-toggle="collapse" href="#vehicles" role="button" aria-expanded="false" aria-controls="collapseExample">Vehicles</a></li>
                 <div class="collapse" id="vehicles">
                     <div class="card-body">
                             @foreach ($pessoa->vehicles as $vehicle)
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 {{-- Mostra as naves --}}
-                <li><a data-toggle="collapse" href="#starships" role="button" aria-expanded="false" aria-controls="collapseExample">Starships</a></li>
+                <li><a class="dropdown-toggle" data-toggle="collapse" href="#starships" role="button" aria-expanded="false" aria-controls="collapseExample">Starships</a></li>
                 <div class="collapse" id="starships">
                     <div class="card-body">
                             @foreach ($pessoa->starships as $starship)
