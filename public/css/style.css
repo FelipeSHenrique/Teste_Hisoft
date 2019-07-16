@@ -68,6 +68,18 @@ body{
     border-color: yellow;
     padding: 10px 30px 10px 30px;
     margin-top: 50px;
+    width: 400px;
+}
+
+.list-info a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Star Jedi', arial;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 .list-info li{
