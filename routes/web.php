@@ -4,5 +4,5 @@
     use App\Http\Controllers\GetController;
 
 
-    Route::get('/pessoa/{id}', [GetController::class, 'getPersonagem']);
+    Route::get('/personagem/{id}', [GetController::class, 'getPersonagem']);
     Route::get('/', [GetController::class, 'getPage']);

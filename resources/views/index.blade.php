@@ -11,7 +11,7 @@
                         
                         <li>
                             {{-- passando apenas o id do personagem para rota pessoa/ --}}
-                            <a href="/{{str_ireplace("https://swapi.co/api/people/", "", $persons->url)}}">{{$persons->name}}</a>
+                            <a href="/personagem/{{str_ireplace("https://swapi.co/api/people/", "", $persons->url)}}">{{$persons->name}}</a>
                         </li>
                         
                     @endforeach
@@ -23,11 +23,11 @@
                     <ul class="pagination list">
                         {{-- Se se a condição previous for nulo então ele não sera mostrado, caso contrario vai tirar -1 da pagina --}}
                        @if($pessoas->previous)  
-                            <li class="item-list"><a href="/pessoas/?page={{$page-1}}">Anterior</a></li>
+                            <li class="item-list"><a href="/?page={{$page-1}}">Anterior</a></li>
                        @endif
                         {{-- Se a condição for verdadeira ele continuara mostrando o next e adicionando +1 na página --}}
                        @if($pessoas->next)
-                            <li class="item-list"><a href="/pessoas/?page={{$page+1}}">Próximo</a></li>
+                            <li class="item-list"><a href="/?page={{$page+1}}">Próximo</a></li>
                        @endif
                    </ul>
                 </div>                
